@@ -1,0 +1,108 @@
+$selectedTextColor: #7678ed;
+$backgroundColor: #00000090;
+
+.footer {
+    width: 100%;
+    height: 80px;
+    padding: 0 5%;
+
+    box-sizing: border-box;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    border-radius: 15px;
+    background-color: $backgroundColor;
+
+    .logo {
+        height: 100%;
+
+        flex-shrink: 0;
+
+        align-content: center;
+
+        a {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+            .logo_text {
+                font-size: 26px;
+                font-weight: 500;
+
+                span {
+                    color: $selectedTextColor;
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+
+    .rights {
+        .github_ref {
+            background: linear-gradient(
+                to right,
+                $selectedTextColor,
+                $selectedTextColor,
+                #85ebff,
+                $backgroundColor,
+                #85aeff,
+                $selectedTextColor,
+                $selectedTextColor
+            );
+            background-clip: text;
+            background-size: 200%;
+
+            color: transparent;
+            font-weight: 600;
+
+            animation: gradientAnimation 3s linear infinite;
+        }
+    }
+
+    .social_block {
+        display: flex;
+        gap: 20px;
+
+        .github {
+            content: url(../../assets/icons/github_white.svg);
+
+            transition: 0.5s ease-in-out;
+
+            &:hover {
+                filter: invert(59%) sepia(38%) saturate(5266%)
+                    hue-rotate(213deg) brightness(93%) contrast(99%);
+            }
+        }
+        .vk {
+            content: url(../../assets/icons/vk_white.svg);
+
+            transition: 0.5s ease-in-out;
+
+            &:hover {
+                filter: invert(59%) sepia(38%) saturate(5266%)
+                    hue-rotate(213deg) brightness(93%) contrast(99%);
+            }
+        }
+        .telegram {
+            content: url(../../assets/icons/telegram_white.svg);
+
+            transition: 0.5s ease-in-out;
+
+            &:hover {
+                filter: invert(59%) sepia(38%) saturate(5266%)
+                    hue-rotate(213deg) brightness(93%) contrast(99%);
+            }
+        }
+    }
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 200% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}

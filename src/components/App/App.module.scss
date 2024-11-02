@@ -1,0 +1,26 @@
+$standardFont: 'Onest Regular';
+
+@font-face {
+    font-family: $standardFont;
+    src: url(/fonts/Onest-Regular.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 80vw;
+    padding: 0 10vw;
+
+    background-color: #262626;
+
+    color: white;
+    font-family: $standardFont;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}

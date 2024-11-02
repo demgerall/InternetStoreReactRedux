@@ -1,0 +1,69 @@
+$backgroundColor: #00000090;
+
+$linkTextColor: #ffffff60;
+$selectedTextColor: #7678ed;
+
+.sidebar {
+    width: 20vw;
+    height: 500px;
+    padding: 20px;
+
+    box-sizing: border-box;
+
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    gap: 20px;
+
+    border-radius: 15px;
+    background-color: $backgroundColor;
+
+    .title {
+        font-size: 30px;
+        padding-bottom: 5px;
+
+        border-bottom: 2px solid $selectedTextColor;
+    }
+
+    nav {
+        .menu {
+            list-style-type: none;
+
+            li {
+                .link {
+                    width: 100%;
+                    padding: 5px 0;
+
+                    display: block;
+
+                    font-size: 18px;
+
+                    transition: 0.3s ease-in-out;
+
+                    &:hover {
+                        font-size: 19px;
+
+                        background-color: $selectedTextColor;
+                    }
+
+                    &.active {
+                        color: $selectedTextColor;
+
+                        &:hover {
+                            background-color: transparent;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .footer {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .link {
+            color: $linkTextColor;
+        }
+    }
+}
