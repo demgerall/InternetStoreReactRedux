@@ -4,8 +4,6 @@ $linkTextColor: #ffffff60;
 $selectedTextColor: #7678ed;
 
 .sidebar {
-    width: 20vw;
-    height: 500px;
     padding: 20px;
 
     box-sizing: border-box;
@@ -18,7 +16,7 @@ $selectedTextColor: #7678ed;
     background-color: $backgroundColor;
 
     .title {
-        font-size: 30px;
+        font-size: 18px;
         padding-bottom: 5px;
 
         border-bottom: 2px solid $selectedTextColor;

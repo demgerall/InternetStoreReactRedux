@@ -3,7 +3,7 @@ $backgroundColor: #00000090;
 
 .header {
     height: 80px;
-    width: 80vw;
+    width: 100%;
     padding: 0 5vw;
 
     box-sizing: border-box;
@@ -17,6 +17,7 @@ $backgroundColor: #00000090;
     justify-content: space-between;
     gap: 3vw;
 
+    border-radius: 10px;
     background-color: $backgroundColor;
     backdrop-filter: blur(8px);
 

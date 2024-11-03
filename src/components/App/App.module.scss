@@ -11,8 +11,11 @@ $standardFont: 'Onest Regular';
 }
 
 body {
-    width: 80vw;
+    width: 100%;
+    height: auto;
     padding: 0 10vw;
+
+    box-sizing: border-box;
 
     background-color: #262626;
 
